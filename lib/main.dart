@@ -1,5 +1,3 @@
-// Create demo application fluuter for practice
-
 import 'package:flutter/material.dart';
 
 void main(){
@@ -25,13 +23,11 @@ class DashboardScreen extends StatelessWidget{
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(
-            child: Text("Dashboard")
-        ),
+        title: Text("Dashboard",style: TextStyle(color: Colors.white),),
+        leading: Icon(Icons.menu,color: Colors.white,),
+        backgroundColor: Colors.teal,
       ),
-      body: Container(
-          color: Colors.blue.shade200
-      ),
+      body: Center(child: Text("Hello Yash",style: TextStyle(fontSize: 34,color: Colors.green),)),
     );
   }
 }
