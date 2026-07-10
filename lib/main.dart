@@ -4,6 +4,9 @@ void main(){
   runApp(Myflutterapp());
 }
 
+// anything what can see in flutter outcome it's called widget
+// Rendering : OUtput ke liye process is rendering
+
 class Myflutterapp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
@@ -27,7 +30,31 @@ class DashboardScreen extends StatelessWidget{
         leading: Icon(Icons.menu,color: Colors.white,),
         backgroundColor: Colors.teal,
       ),
-      body: Center(child: Text("Hello Yash",style: TextStyle(fontSize: 34,color: Colors.green),)),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            Container(
+              height: 100,
+              width: 200,
+              color: Colors.tealAccent,
+              child: Center(child: Text("Container 1"),),
+            ),
+            Container(
+              height: 100,
+              width: 200,
+              color: Colors.tealAccent,
+              child: Center(child: Text("Container 1"),),
+            ),
+            Container(
+              height: 100,
+              width: 200,
+              color: Colors.tealAccent,
+              child: Center(child: Text("Container 1"),),
+            ),
+          ],
+        ),
+      )
     );
   }
 }
