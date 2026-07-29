@@ -51,9 +51,15 @@ class _TodoScreenState extends State<TodoScreen> {
               IconButton(onPressed: (){
                 if(txtTitle.text.isNotEmpty){
                 log(txtTitle.text);
-                tasks.add(txtTitle.text);
+                if(selInd==-1){
+                  tasks.add(txtTitle.text);
+                }else{
+                  tasks[selInd] =txtTitle.text;
+                  selInd = -1;
+                }
                 txtTitle.text = "";
                 setState(() {
+
                 });
                 }
               }, icon: Icon(Icons.add))
@@ -78,9 +84,24 @@ class _TodoScreenState extends State<TodoScreen> {
                 width: 70,
                 child: Row(
                   children: [
-                    Icon(Icons.edit),
+                    InkWell(
+                        onTap: (){
+                          txtTitle.text = tasks[index];
+                          selInd = index;
+                          setState(() {
+                          });
+                        },
+                        child: Icon(Icons.edit)),
+
                     SizedBox(width: 6,),
-                    Icon(Icons.delete),
+                    InkWell(
+                        onTap: (){
+                          tasks.removeAt(index);
+                          setState(() {
+
+                          });
+                        },
+                        child: Icon(Icons.delete)),
                   ],
                 ),
               ),
