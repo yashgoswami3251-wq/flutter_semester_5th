@@ -37,13 +37,18 @@ Widget ScrollDips(){
         scrollDirection: Axis.vertical,
           itemCount: i2.length,
           itemBuilder: (context,index){
-            return Padding(padding: const EdgeInsets.all(8.0),
-    
-                child: Image(image: AssetImage(i2[index]),
-                height: 200,
-                width: 120,
-                fit: BoxFit.cover,
+            return Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Image(image: AssetImage(i2[index]),
+                    height: 200,
+                    width: 120,
+                    fit: BoxFit.cover,
+                  ),
                 ),
+                Text("This Image")
+              ],
             );
           }
       ),

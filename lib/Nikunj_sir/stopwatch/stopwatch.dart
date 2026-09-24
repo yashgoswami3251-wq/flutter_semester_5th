@@ -3,30 +3,16 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:flutter_semester_five/Arzoo_sir/color_page.dart';
 
-void main(){
-  runApp(myflutter());
-}
 
-class myflutter extends StatelessWidget{
+class dashboard1 extends StatefulWidget {
+  final name;
+  final email;
+  const dashboard1({super.key, required this.name, required this.email});
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: "My flutter",
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.teal
-      ),
-      home: dashboard(),
-    );
-  }
+  State<dashboard1> createState() => _dashboard1State();
 }
 
-class dashboard extends StatefulWidget{
-  @override
-  State<StatefulWidget> createState() => myhomepage();
-}
-
-class myhomepage extends State<dashboard>{
+class _dashboard1State extends State<dashboard1>{
 
   //int second = 0;
   int milliseconds = 0;
@@ -131,13 +117,14 @@ class myhomepage extends State<dashboard>{
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(child: Text("Stopwatch")),
+        title: Text(widget.name),
         backgroundColor: Colors.deepPurpleAccent,
       ),
       body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              Text(widget.email),
               Text(_milliseconds(milliseconds),style: Theme.of(context).textTheme.headlineLarge,),
               SizedBox(height: 10,),
               Row(

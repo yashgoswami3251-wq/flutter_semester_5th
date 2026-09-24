@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_semester_five/Arzoo_sir/color_page.dart';
+import 'package:flutter_semester_five/Nikunj_sir/stopwatch/stopwatch.dart';
 
 
 void main(){
@@ -17,6 +19,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
   bool isloggedin = false;
   String name = "";
+  String email = "";
   final _nameCotroller = TextEditingController();
   final _emailContoller = TextEditingController();
   final _formKey = GlobalKey<FormState>();
@@ -35,12 +38,6 @@ class _LoginScreenState extends State<LoginScreen> {
         ),
       ),
     );
-  }
-
-  @override
-  void dispose(){
-    _nameCotroller.dispose();
-    _emailContoller.dispose();
   }
 
   Widget _buildSuccess(){
@@ -113,8 +110,18 @@ class _LoginScreenState extends State<LoginScreen> {
     if(form != null && form.validate()){
       setState(() {
         name = _nameCotroller.text;
+        email = _emailContoller.text;
         isloggedin = true;
       });
+      Navigator.push(
+          context,
+          MaterialPageRoute(
+              builder: (context)=>dashboard1(
+                  name:name,
+                  email:email,
+              )
+          )
+      );
     }
   }
 }

@@ -39,7 +39,7 @@ class myhomepage extends State<dashboard>{
             child: Padding(
               padding: const EdgeInsets.only(top: 10),
               child: Container(
-                height: 600,
+                height: 650,
                 width: 400,
                 color: Colors.grey,
                 child: Column(
@@ -66,214 +66,296 @@ class myhomepage extends State<dashboard>{
                       ),
                     ),
 
-                    Padding(
-                      padding: const EdgeInsets.all(10),
-                      child: Row(
-                        children: [
-                          Container(
-                            height: 70,
-                            width: 80,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(11),
-                              color: Colors.grey.shade100,
+                    Container(
+                      child : Padding(
+                        padding: const EdgeInsets.all(10),
+                        child: Row(
+                          children: [
+                            Container(
+                              height: 70,
+                              width: 87,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(11),
+                                color: Colors.grey.shade100,
+                              ),
+                              child: TextButton(onPressed: (){}, child: Text("%",style:TextStyle(fontSize: 23),)),
                             ),
-                          ),
-                          SizedBox(width: 20,),
-                          Container(
-                            height: 70,
-                            width: 80,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(11),
-                              color: Colors.grey.shade100,
+                            SizedBox(width: 7,),
+                            Container(
+                              height: 70,
+                              width: 87,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(11),
+                                color: Colors.grey.shade100,
+                              ),
+                              child: TextButton(onPressed: (){}, child: Text("CE",style:TextStyle(fontSize: 23),)),
                             ),
-                          ),
-                          SizedBox(width: 20,),
-                          Container(
-                            height: 70,
-                            width: 80,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(11),
-                              color: Colors.grey.shade100,
+                            SizedBox(width: 7,),
+                            Container(
+                              height: 70,
+                              width: 87,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(11),
+                                color: Colors.grey.shade100,
+                              ),
+                              child: TextButton(onPressed: (){}, child: Text("C",style:TextStyle(fontSize: 23),)),
                             ),
-                          ),
-                          SizedBox(width: 20,),
-                          Container(
-                            height: 70,
-                            width: 80,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(11),
-                              color: Colors.grey.shade100,
+                            SizedBox(width: 7,),
+                            Container(
+                              height: 70,
+                              width: 87,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(11),
+                                color: Colors.grey.shade100,
+                              ),
+                              child: TextButton(onPressed: (){}, child: Icon(Icons.remove)),
                             ),
-                          ),
-                        ],
-                      ),
-                    ),Padding(
-                      padding: const EdgeInsets.all(10),
-                      child: Row(
-                        children: [
-                          Container(
-                            height: 70,
-                            width: 80,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(11),
-                              color: Colors.grey.shade100,
-                            ),
-                          ),
-                          SizedBox(width: 20,),
-                          Container(
-                            height: 70,
-                            width: 80,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(11),
-                              color: Colors.grey.shade100,
-                            ),
-                          ),
-                          SizedBox(width: 20,),
-                          Container(
-                            height: 70,
-                            width: 80,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(11),
-                              color: Colors.grey.shade100,
-                            ),
-                          ),
-                          SizedBox(width: 20,),
-                          Container(
-                            height: 70,
-                            width: 80,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(11),
-                              color: Colors.grey.shade100,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),Padding(
-                      padding: const EdgeInsets.all(10),
-                      child: Row(
-                        children: [
-                          Container(
-                            height: 70,
-                            width: 80,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(11),
-                              color: Colors.grey.shade100,
-                            ),
-                          ),
-                          SizedBox(width: 20,),
-                          Container(
-                            height: 70,
-                            width: 80,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(11),
-                              color: Colors.grey.shade100,
-                            ),
-                          ),
-                          SizedBox(width: 20,),
-                          Container(
-                            height: 70,
-                            width: 80,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(11),
-                              color: Colors.grey.shade100,
-                            ),
-                          ),
-                          SizedBox(width: 20,),
-                          Container(
-                            height: 70,
-                            width: 80,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(11),
-                              color: Colors.grey.shade100,
-                            ),
-                          ),
-                        ],
-                      ),
+                          ],
+                        ),
+                      )
                     ),
-                    Padding(
-                      padding: const EdgeInsets.all(10),
-                      child: Row(
-                        children: [
-                          Container(
-                            height: 70,
-                            width: 80,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(11),
-                              color: Colors.grey.shade100,
+                    Container(
+                      child : Padding(
+                        padding: const EdgeInsets.all(10),
+                        child: Row(
+                          children: [
+                            Container(
+                              height: 70,
+                              width: 87,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(11),
+                                color: Colors.grey.shade100,
+                              ),
+                              child: TextButton(onPressed: (){}, child: Text("1/2",style:TextStyle(fontSize: 23),)),
                             ),
-                          ),
-                          SizedBox(width: 20,),
-                          Container(
-                            height: 70,
-                            width: 80,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(11),
-                              color: Colors.grey.shade100,
+                            SizedBox(width: 7,),
+                            Container(
+                              height: 70,
+                              width: 87,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(11),
+                                color: Colors.grey.shade100,
+                              ),
+                              child: TextButton(onPressed: (){}, child: Text("x^2",style:TextStyle(fontSize: 23),)),
                             ),
-                          ),
-                          SizedBox(width: 20,),
-                          Container(
-                            height: 70,
-                            width: 80,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(11),
-                              color: Colors.grey.shade100,
+                            SizedBox(width: 7,),
+                            Container(
+                              height: 70,
+                              width: 87,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(11),
+                                color: Colors.grey.shade100,
+                              ),
+                              child: TextButton(onPressed: (){}, child: Text("2x",style:TextStyle(fontSize: 23),)),
                             ),
-                          ),
-                          SizedBox(width: 20,),
-                          Container(
-                            height: 70,
-                            width: 80,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(11),
-                              color: Colors.grey.shade100,
+                            SizedBox(width: 7,),
+                            Container(
+                              height: 70,
+                              width: 87,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(11),
+                                color: Colors.grey.shade100,
+                              ),
+                              child: TextButton(onPressed: (){}, child: Text("%",style:TextStyle(fontSize: 23),)),
                             ),
-                          ),
-                        ],
-                      ),
+                          ],
+                        ),
+                      )
                     ),
-                    Padding(
-                      padding: const EdgeInsets.all(10),
-                      child: Row(
-                        children: [
-                          Container(
-                            height: 70,
-                            width: 80,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(11),
-                              color: Colors.grey.shade100,
+                    Container(
+                      child : Padding(
+                        padding: const EdgeInsets.all(10),
+                        child: Row(
+                          children: [
+                            Container(
+                              height: 70,
+                              width: 87,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(11),
+                                color: Colors.grey.shade100,
+                              ),
+                              child: TextButton(onPressed: (){}, child: Text("7",style:TextStyle(fontSize: 23),)),
                             ),
-                          ),
-                          SizedBox(width: 20,),
-                          Container(
-                            height: 70,
-                            width: 80,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(11),
-                              color: Colors.grey.shade100,
+                            SizedBox(width: 7,),
+                            Container(
+                              height: 70,
+                              width: 87,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(11),
+                                color: Colors.grey.shade100,
+                              ),
+                              child: TextButton(onPressed: (){}, child: Text("8",style:TextStyle(fontSize: 23),)),
                             ),
-                          ),
-                          SizedBox(width: 20,),
-                          Container(
-                            height: 70,
-                            width: 80,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(11),
-                              color: Colors.grey.shade100,
+                            SizedBox(width: 7,),
+                            Container(
+                              height: 70,
+                              width: 87,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(11),
+                                color: Colors.grey.shade100,
+                              ),
+                              child: TextButton(onPressed: (){}, child: Text("9",style:TextStyle(fontSize: 23),)),
                             ),
-                          ),
-                          SizedBox(width: 20,),
-                          Container(
-                            height: 70,
-                            width: 80,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(11),
-                              color: Colors.grey.shade100,
+                            SizedBox(width: 7,),
+                            Container(
+                              height: 70,
+                              width: 87,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(11),
+                                color: Colors.grey.shade100,
+                              ),
+                              child: TextButton(onPressed: (){}, child: Text("*",style:TextStyle(fontSize: 23),)),
                             ),
-                          ),
-                        ],
-                      ),
+                          ],
+                        ),
+                      )
                     ),
+                    Container(
+                      child : Padding(
+                        padding: const EdgeInsets.all(10),
+                        child: Row(
+                          children: [
+                            Container(
+                              height: 70,
+                              width: 87,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(11),
+                                color: Colors.grey.shade100,
+                              ),
+                              child: TextButton(onPressed: (){}, child: Text("4",style:TextStyle(fontSize: 23),)),
+                            ),
+                            SizedBox(width: 7,),
+                            Container(
+                              height: 70,
+                              width: 87,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(11),
+                                color: Colors.grey.shade100,
+                              ),
+                              child: TextButton(onPressed: (){}, child: Text("5",style:TextStyle(fontSize: 23),)),
+                            ),
+                            SizedBox(width: 7,),
+                            Container(
+                              height: 70,
+                              width: 87,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(11),
+                                color: Colors.grey.shade100,
+                              ),
+                              child: TextButton(onPressed: (){}, child: Text("6",style:TextStyle(fontSize: 23),)),
+                            ),
+                            SizedBox(width: 7,),
+                            Container(
+                              height: 70,
+                              width: 87,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(11),
+                                color: Colors.grey.shade100,
+                              ),
+                              child: TextButton(onPressed: (){}, child: Text("-",style: TextStyle(fontSize: 28),)),
+                            ),
+                          ],
+                        ),
+                      )
+                    ),
+                    Container(
+                      child : Padding(
+                        padding: const EdgeInsets.all(10),
+                        child: Row(
+                          children: [
+                            Container(
+                              height: 70,
+                              width: 87,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(11),
+                                color: Colors.grey.shade100,
+                              ),
+                              child: TextButton(onPressed: (){}, child: Text("1",style:TextStyle(fontSize: 23),)),
+                            ),
+                            SizedBox(width: 7,),
+                            Container(
+                              height: 70,
+                              width: 87,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(11),
+                                color: Colors.grey.shade100,
+                              ),
+                              child: TextButton(onPressed: (){}, child: Text("2",style:TextStyle(fontSize: 23),)),
+                            ),
+                            SizedBox(width: 7,),
+                            Container(
+                              height: 70,
+                              width: 87,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(11),
+                                color: Colors.grey.shade100,
+                              ),
+                              child: TextButton(onPressed: (){}, child: Text("3",style:TextStyle(fontSize: 23),)),
+                            ),
+                            SizedBox(width: 7,),
+                            Container(
+                              height: 70,
+                              width: 87,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(11),
+                                color: Colors.grey.shade100,
+                              ),
+                              child: TextButton(onPressed: (){}, child: Text("+",style:TextStyle(fontSize: 23),)),
+                            ),
+                          ],
+                        ),
+                      )
+                    ),
+                    Container(
+                        child : Padding(
+                          padding: const EdgeInsets.all(10),
+                          child: Row(
+                            children: [
+                              Container(
+                                height: 70,
+                                width: 87,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(11),
+                                  color: Colors.grey.shade100,
+                                ),
+                                child: TextButton(onPressed: (){}, child: Text("+/-",style:TextStyle(fontSize: 23),)),
+                              ),
+                              SizedBox(width: 7,),
+                              Container(
+                                height: 70,
+                                width: 87,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(11),
+                                  color: Colors.grey.shade100,
+                                ),
+                                child: TextButton(onPressed: (){}, child: Text("0",style:TextStyle(fontSize: 23),)),
+                              ),
+                              SizedBox(width: 7,),
+                              Container(
+                                height: 70,
+                                width: 87,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(11),
+                                  color: Colors.grey.shade100,
+                                ),
+                                child: TextButton(onPressed: (){}, child: Text(".",style:TextStyle(fontSize: 23),)),
+                              ),
+                              SizedBox(width: 7,),
+                              Container(
+                                height: 70,
+                                width: 87,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(11),
+                                  color: Colors.grey.shade100,
+                                ),
+                                child: TextButton(onPressed: (){}, child: Text("=",style:TextStyle(fontSize: 23),)),
+                              ),
+                            ],
+                          ),
+                        )
+                    ),
+                   
+
                   ],
                 ),
               ),
@@ -283,4 +365,50 @@ class myhomepage extends State<dashboard>{
       )
     );
   }
+
+  // Widget Containers ({required Padding child}){
+  //   return Padding(
+  //     padding: const EdgeInsets.all(10),
+  //     child: Row(
+  //       children: [
+  //         Container(
+  //           height: 70,
+  //           width: 80,
+  //           decoration: BoxDecoration(
+  //             borderRadius: BorderRadius.circular(11),
+  //             color: Colors.grey.shade100,
+  //           ),
+  //         ),
+  //         SizedBox(width: 20,),
+  //         Container(
+  //           height: 70,
+  //           width: 80,
+  //           decoration: BoxDecoration(
+  //             borderRadius: BorderRadius.circular(11),
+  //             color: Colors.grey.shade100,
+  //           ),
+  //           child: TextButton(onPressed: (){}, child: Text("5")),
+  //         ),
+  //         SizedBox(width: 20,),
+  //         Container(
+  //           height: 70,
+  //           width: 80,
+  //           decoration: BoxDecoration(
+  //             borderRadius: BorderRadius.circular(11),
+  //             color: Colors.grey.shade100,
+  //           ),
+  //         ),
+  //         SizedBox(width: 20,),
+  //         Container(
+  //           height: 70,
+  //           width: 80,
+  //           decoration: BoxDecoration(
+  //             borderRadius: BorderRadius.circular(11),
+  //             color: Colors.grey.shade100,
+  //           ),
+  //         ),
+  //       ],
+  //     ),
+  //   );
+  // }
 }
